@@ -1,0 +1,41 @@
+{% extends "main.html" %}
+{% block body %}
+ <main role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3 mx-auto mt-4 home-h1">Let's learn together</h1>
+          <p class="lead mx-auto home-p">At our nail salon we offer classes to help nail artists at any level</p>
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <h2>Certified Nail Artists</h2>
+			<img class="mw-100" src="/static/images/class.jpg" alt="Crystal Culture class">
+          </div>
+          <div class="col-md-8 col-sm-6">
+            <h2>Learn at our Studio</h2>
+            <p>We have classes at our studio to prepare students to face the ever evolving challenges they face in all aspects of being a nail artists. We bring instructors that can show students the methods they should know to be amazing nail artists.</p>
+            <p>At our studio we are fourtenate to have a Swarovski certified instructor that is able to show you the correct way of placing crystals on nails. If you want to know the correct way use Akzentz products we have a certified instructor to teach the correct way</p>
+            <p><a class="btn btn-secondary btn-lg btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Upcoming Classes Schedule &raquo;</a></p>
+          </div>
+        </div>
+        <hr>
+      </div> <!-- /container -->
+    <div class="container">
+      	<div class="row collapse" id="collapseExample">
+      		<div class="col-md-12">
+      			<h3>Our Upcoming Classes</h3>
+      			<p></p>
+
+      		</div>
+
+      	</div>
+	</div>  <!-- /container -->
+</main>
+
+{% endblock %}

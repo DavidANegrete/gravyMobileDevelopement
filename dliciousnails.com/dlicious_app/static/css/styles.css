@@ -1,0 +1,47 @@
+.home-h1{
+
+	max-width: 400px;
+
+}
+.home-p{
+
+	max-width: 400px;
+}
+.btn-home-potfolio{
+
+  width: 400px;
+}
+.btn-outline-danger{
+
+	opacity: 0.5;
+}
+	/* media querries */
+	
+@media(max-width:320px ) and (min-width:300px){
+
+}
+
+@media(max-width:360px ) and (min-width:321px){
+
+	
+}
+@media(max-width:400px ) and (min-width:361px){
+
+	
+}
+@media(max-width:443px ) and (min-width:401px){
+
+	
+}
+@media(max-width:480px ) and (min-width:444px){
+
+	
+}
+@media(max-width:577px ) and (min-width:481px){
+
+	
+}
+@media(max-width:769px ) and (min-width:578px){
+
+	
+}

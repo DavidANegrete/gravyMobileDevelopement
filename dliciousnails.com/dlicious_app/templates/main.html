@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Facebook OG Tag -->
+    <meta property="og:title" content="Gravy Mobile Application Developement" />
+    <meta property="og:type" content="website">
+    <meta property="og:url"content="http://www.GravyMobileApplicationDevelopement.com/" />
+    <meta property="og:image" content="http://GravyMobileApplicationDevelopement.com/img/southwestpurewater_logo.jpg" />
+    <meta property="og:description" content="{{ desc }}" />
+    <!-- Website Tag -->
+    <title>{{ title }}</title>
+    <meta name="author" content="David Negrete - Gravy Mobile Application Developement ">
+    <meta name="description" content="{{ desc }}">
+    <meta name="Robots" content="INDEX, FOLLOW">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">    
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href='{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css') }}'>
+    <link rel='stylesheet' type='text/css' href='{{ url_for('static', filename='css/styles.css') }}'>
+    <link rel="stylesheet" href='{{ url_for('static', filename='css/magnific.css') }}'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  </head>
+  <body>
+<!-- /.navbar -->
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse text-white">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+   <a class="navbar-brand" id="brand"href="/" ><span class="brand-name">D'Licous Nails</span> | <span class="small nav-studio-text"> Nail Art Studio</span></a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item text-center">
+            <a class="nav-link nav-page text-white" href="{{ url_for('about') }}">About</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link nav-page text-white" href="{{ url_for('services') }}">Menu</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link nav-page text-white" href="{{ url_for('classes') }}">Classes</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link nav-page text-white" href="{{ url_for('blog') }}">Nail Blog</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link nav-page text-white" href="{{ url_for('portfolio') }}">Portfolio</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link nav-page text-white" href="{{ url_for('appointments') }}">Appointments</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link nav-page text-white" href="{{ url_for('contact') }}">Contact Us</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link nav-page text-white" href="#">Book Now!</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+{% block body %}
+{% endblock %}
+
+<!--  Footer-->
+    <div class="footer bg-inverse text-white" id="contact">
+      <div class="social row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" >
+            <a href="https://www.facebook.com/southwestpurewater/"><i class="fa fa-facebook-official text-white social-icon" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/"><i class="fa fa-youtube text-white social-icon" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/"><i class="fa fa-twitter text-white social-icon" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-name row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" >
+          <p class="footer-c p-2">D'Licious Nails &copy; 2018 </p>
+        </div>
+      </div>
+    </div><!-- EO contact-info-->
+
+
+
+    <!-- Scripts-->
+{% block scripts %}
+{% endblock %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+      $(document).ready(function () {
+        $(".navbar-nav li .nav-page").click(function(event) {
+
+
+          $(".navbar-collapse").collapse('hide');
+        });
+      });
+</script>
+  </body>
+</html>

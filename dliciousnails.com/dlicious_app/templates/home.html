@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+{% block body %}
+ <main role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3 mx-auto mt-4 home-h1">Not your average Nail Salon in El Paso, Texas</h1>
+          <p class="lead mx-auto home-p">We are a nail art studio where nail art is created for each of our clients.</p>
+          <p class="mx-auto"><a class="btn btn-primary btn-lg btn-home-potfolio" href="{{ url_for('portfolio') }}" role="button">Check out our Portfolio &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>A Place for Nail Art</h2>
+            <p>Some nail art fanatics prefer acrylic others, like hard gel and some like gel polish. What every your preference is we can create the next design you are after with the best products on the market. We create nail art using the best products from around the world. One thing is to have the best products but you also need people that know how to use them, at our studio we are fortunate to have a certified Akentz instructor.</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('about') }}" role="button">More About our Studio &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Learn at our Studio</h2>
+            <p>We are so much more than a place to get your nails done in El Paso, our studio is here to educate nail artists of any capacity on how they can get better at their craft. We have an in house certified instructor that can show you how to correctly apply embellishments and use products from Akzentz and Swarovski. She can also show you how to create designs that will amaze people. Her work has been share and featured by Good House Keeping, Nail Pro and Nails Magazine.</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('classes') }}" role="button">Details on our Nail Art Classes &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Booking Made Easy</h2>
+            <p>We want to make it easy for you to get your dream nails and pedicure at our nail salon. We do this by making it easy for you to book with us, we do all our booking on-line and give our guests the option of changing their appointment without having to call to do so. Even if you want to get your nails done on the same day you can check to see if we have availability and not tale the time to drive out to our East El Paso nail salon only to find out we are fully booked.</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('appointments') }}" role="button">How to Book an Appointment&raquo;</a></p>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+{% endblock %}

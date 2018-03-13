@@ -1,0 +1,34 @@
+{% extends "main.html" %}
+{% block body %}
+ <main role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3 mx-auto mt-4 home-h1">A Nail Art Studio and Nail Salon in El Paso</h1>
+          <p class="lead mx-auto home-p">There are many nail salons in El Paso but only one Nail Art Studio</p>
+        </div>
+      </div>
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>A Nail Art Studio</h2>
+            <p>We are about creating a work of art any time you get your nails done with us. Available to you in our studio is everything you need to make your hands and feet look their best. We carry top of the line Swarovski elements and in our studio are the artists that can add them on your hands or feet.</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('about') }}" role="button">More About our Studio &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>How We are Different</h2>
+            <p>There are many in and out salons that don't deliver what their customers want. We take our time to figure out what it is that a client is after to insure a returning client. We are a one of a kind nail art studio with the goal of exceeding our clients expectations every time.</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('classes') }}" role="button">Details on our Nail Art Classes &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>A Place to Learn and Create Nail Art</h2>
+            <p>Our nail art studio is a safe heaven for any nail artist. Our endless collection of height quality professional products from all over the world can make any artist inspired. We also have a library of professional and nonprofessional books on nail, nail art, nail chemistry, nail architecture and nail business. We also have array of amazing artist who are also an industry leading educator who specialize in many mediums such as acrylic, gel and hard gel. So combining all of this if you can dream it we can achieve it </p>
+            <p><a class="btn btn-secondary" href="{{ url_for('classes') }}" role="button">Details on our Nail Art Classes &raquo;</a></p>
+          </div>
+        </div> <!-- /row -->
+        <hr>
+      </div> <!-- /container -->
+ </main>
+
+{% endblock %}
