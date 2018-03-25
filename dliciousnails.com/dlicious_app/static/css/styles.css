@@ -1,16 +1,18 @@
 .home-h1{
 
-	max-width: 400px;
+	max-width: 600px;
+	font-size: 90px;
+	padding: 30px 30px 0 30px;
+	text-align: center
 
 }
 .home-p{
 
-	max-width: 400px;
+	max-width: 550px;
+	font-size: 35px;
+	text-align: center;
 }
-.btn-home-potfolio{
 
-  width: 400px;
-}
 .btn-outline-danger{
 
 	opacity: 0.5;
