@@ -1,0 +1,241 @@
+/*Nav Bar*/
+
+.navbar-brand{
+
+	margin-top:-10px;
+	padding-top:0;
+	padding-bottom:0;
+	}
+
+.brand-name{
+	
+	font-family: 'Italianno', cursive;
+	text-transform: capitalize;
+	font-size: 50px;
+    text-shadow: 1px  1px #44707d;	
+}
+.nav-brand-text{
+
+	font-size:25px;
+	font-family: 'Unica One', cursive;
+	text-transform: capitalize;
+}
+.navbar{
+	
+	background-color: #dde5f9 !important;
+	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-size:30px;
+}
+.navbar-toggler{
+
+	margin-top:10px;
+}
+
+/* EO Nav */
+
+.home-jumbo{
+	
+	width: 100%;
+	background-image: url("../images/elpasofinal.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #2f2e2f;
+}
+.home-h1{
+
+	font-family: 'Contrail One', cursive;
+	background-color:rgb(243, 243, 249);opacity:0.5;
+	color:#060606;
+	font-size:60px;
+	opacity:.6;
+	margin-top: 20px;
+
+}
+.home-p{
+
+	font-family: 'Do Hyeon', sans-serif;
+	text-shadow: 4px  4px #f3ebeb;	
+}
+
+/*EO Landing Jumbo*/
+
+/* Products*/
+
+.our-products{
+
+	background-color: #c4d2e4;
+}
+.whole-home-div{
+
+	height: 400px;
+	width: 100%;
+	background-image: url("../images/SilverShield-NASA.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.products-head{
+
+	padding-left:10%;
+	padding-right: 10%;
+	padding-top:15%;
+	padding-bottom: 100px;
+	color: #1e2123;
+	opacity: 0.8;
+}
+.products-desc{
+
+	font-size:18px;
+	padding-top:20px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.products-text-head{
+
+	padding-top:20px;
+}
+.products-text-desc{
+
+	font-size:18px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.system-div{
+	
+	padding-top: 10px;
+	background-image: url("../images/slight-water.jpeg");
+	width:400px;
+	margin:auto;
+	margin-bottom: 10px;
+	background-repeat:no-repeat;
+}
+
+.micro-div{
+
+    padding-top: 10px;
+    margin:auto;
+	margin-bottom: 10px;
+	width:400px;
+}
+.accordion-head{
+    
+    padding-top: 5%;
+	padding-bottom:5%;
+	font-weight:bold;
+	font-size:25px;
+}
+.unit-certification{
+
+	border-style: groove;
+	border-color:gold;
+}
+.tank-details{
+
+	font-weight: bold;
+	padding-left: 5px;
+
+}
+.filtramax-numbered
+.hydronex-numbered{
+
+	padding-top:23%;
+	width:100%;
+}
+.filtramax{
+
+	width: 50%
+}
+.certification-details{
+
+	padding-top:5%;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 20px;
+}
+.small-certification{
+
+	padding: 10px 10px;
+	width: 50%;
+}
+.igen{
+
+	width: 70%;
+}
+.micro-div{
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+	background: rgb(30,87,153); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+.ro-cert{
+
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.ro-certification-details{
+
+	font-size: 17px;
+}
+.micromax-numbered{
+
+	width: 70%;
+	margin-top: 55%;
+}
+.micromax{
+
+	padding-top:40px;
+	width:80%;
+}
+
+
+/* media querries */
+	
+@media(max-width:320px ) and (min-width:300px){
+
+}
+
+
+@media(max-width:360px ) and (min-width:321px){
+
+	
+}
+@media(max-width:374px ) and (min-width:360px){
+
+	
+}
+@media(max-width:400px ) and (min-width:375px){
+
+	/*Home Page*/
+
+	/* EO Home Page*/
+
+}
+@media(max-width:443px ) and (min-width:401px){
+
+	/*Home Page*/
+
+
+	/* EO Home Page*/
+	
+}
+@media(max-width:480px ) and (min-width:444px){
+
+	
+}
+@media(max-width:577px ) and (min-width:481px){
+
+	
+}
+@media(max-width:769px ) and (min-width:578px){
+
+	
+}
+@media(max-width:769px ) and (min-width:578px){
+
+	
+}

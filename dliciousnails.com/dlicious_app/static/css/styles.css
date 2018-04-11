@@ -1,9 +1,61 @@
+h1,
+h2,
+h4{
+	
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/*Nav Bar*/
+
+.brand-name{
+	
+	font-family: 'Great Vibes', cursive;
+	text-transform: capitalize;
+	font-size: 30px;
+}
+.navbar{
+	
+	background-color: #eaebe6 !important;
+	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-weight: 700;
+}
+.navbar a {
+	
+	color: #111 !important;
+	opacity: 0.7;
+}
+.nav-section:hover{
+	
+	opacity: 1;
+	background-color: #ffffff !important;
+}
+#brand{
+	
+	max-width: 50%;
+}
+
+/* EO Nav Bar*/
+
+/*Home Page*/
+.home-jumbo{
+	
+	width: 100%;
+	padding: 30px 30px;
+	margin-top: 50px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #2f2e2f;
+}
+
 .home-h1{
 
-	max-width: 600px;
 	font-size: 90px;
-	padding: 30px 30px 0 30px;
-	text-align: center
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;;
 
 }
 .home-p{
@@ -17,22 +69,101 @@
 
 	opacity: 0.5;
 }
-	/* media querries */
+
+.appointment-head-area{
+	height: 300px;
+	width: 100%;
+	background-image: url("../images/appointments.jpeg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #2f2e2f;
+}
+.appointments-head{
+
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 33% 0 33px;
+}
+.appointments-home{
+
+	
+	text-align: center;
+}
+
+/* EO Home Page*/
+
+/* media querries */
 	
 @media(max-width:320px ) and (min-width:300px){
+	
+	/*Home Page*/
+
+	.home-h1{
+
+		font-size: 50px;	
+	}
+	.home-p{
+
+		font-size: 25px;
+	}
+	/* EO Home Page*/
 
 }
+
 
 @media(max-width:360px ) and (min-width:321px){
 
 	
 }
-@media(max-width:400px ) and (min-width:361px){
+@media(max-width:374px ) and (min-width:360px){
 
 	
 }
+@media(max-width:400px ) and (min-width:375px){
+
+	/*Home Page*/
+
+	/* Iphone X*/
+	.home-jumbo{
+
+		height: 800px;
+		background-image: url("../images/appointments.jpeg");
+	}
+	.home-h1{
+
+		font-size: 70px;
+		padding-top: .25em;
+		padding-bottom: .25em;	
+	}
+	.home-p{
+
+		font-size: 30px;
+	}
+
+	/* EO Home Page*/
+
+}
 @media(max-width:443px ) and (min-width:401px){
 
+	/*Home Page*/
+
+	/* Iphone X*/
+	.home-jumbo{
+
+		height: 800px;
+	}
+	.home-h1{
+
+		font-size: 70px;
+		padding-top: .25em;	
+	}
+	.home-p{
+
+		font-size: 30px;
+	}
+
+	/* EO Home Page*/
 	
 }
 @media(max-width:480px ) and (min-width:444px){
@@ -40,6 +171,10 @@
 	
 }
 @media(max-width:577px ) and (min-width:481px){
+
+	
+}
+@media(max-width:769px ) and (min-width:578px){
 
 	
 }

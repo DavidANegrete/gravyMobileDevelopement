@@ -2,9 +2,9 @@
 {% block body %}
  <main role="main">
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class="jumbotron home-jumbo">
         <div class="container">
-          <h1 class="display-3 mx-auto mt-4 home-h1">More than just a Nail Salon in El Paso</h1>
+          <h1 class="display-3 mt-4 mx-auto home-h1">More than just a Nail Salon in El Paso</h1>
           <p class="lead mx-auto home-p">We are a Nail Art Studio where Nail Art is created for each of our clients.</p>
         </div>
       </div>
@@ -14,21 +14,23 @@
         <div class="row">
           <div class="col-sm-12 col-md-8">
             <h2 class="row-head pb-1">Our Nail Art will Delight you!</h2>
-            <img class="mw-100 pb-1" src="/static/images/class.jpg" alt="Crystal Culture class">
+            <img class="mw-100 pb-1" src="/static/images/dliciousnails-nail-art.jpg" alt="Nail Art - Victorian Nails">
             <p class="pt-2">Nail artists create works of art that require not just thorough knowledge of proper nail care but meticulous attention to detail, creativity and passion.</p>
             <p>Some nail art lovers prefer acrylic, while others may fancy hard gel or gel polish. Maybe you want to dazzle with Swarovski elements, 3D sculpted designs or maybe you prefer to keep it simple and elegant. Whatever your preference, we make the nail design of your dreams a reality. We search the world to curate the highest quality products--you deserve it! It is a truly magical combination to bring together the best products with our passionate, dedicated, team of professionally-trained nail artists!</p>
             <p class"fixed-bottom"><a class="btn btn-secondary" href="{{ url_for('about') }}" role="button">More About our Studio &raquo;</a></p>
           </div>
           <div class="col-sm-12 col-md-4">
             <h2 class="row-head pb-1">Learn at our Studio</h2>
-            <p>We teach what we love! Our nail salon is dedicated to the success of our nail artist community by offering continuing education courses to ensure you remain on the cutting edge of nail artistry and design! Our in-house instructor, Undarmaa Baasandorj, is an <a href="https://akzentz.com/education/educators/">Akzentz Certified Educator (A.C.E.)</a> and a <a href="http://www.crystalbeautyacademy.com/our-team.html">Swarovski Authorized Nail Educator</a>. She teaches techniques that will be sure to amaze your clients and grow your brand!
-            </p>The work of our in-house instructor, Undarmaa, has been featured in widely-recognized magazines like <a href="https://www.goodhousekeeping.com/beauty/nails/g2538/summer-nail-art-ideas/?slide=26">Good HouseKeeping</a>, Nail Pro and Nails Magazine and in the national online  <a href="https://www.groupon.com/articles/winter-nails-colors-and-designs-pictures">Groupon Guide</a>.</p>
+            <p>We teach what we love! Our nail salon is dedicated to the success of our nail artist community by offering continuing education courses to ensure nail artists remain on the cutting edge of nail artistry and design! Our in-house instructor, Undarmaa Baasandorj, is an <a href="https://akzentz.com/education/educators/">Akzentz Certified Educator (A.C.E.)</a> and a <a href="http://www.crystalbeautyacademy.com/our-team.html">Swarovski Authorized Nail Educator</a>. She teaches techniques that will you amaze your clients and grow your brand!
+          
             <p class"fixed-bottom"><a class="btn btn-secondary" href="{{ url_for('classes') }}" role="button">Details on our Nail Art Classes &raquo;</a></p>
           </div>
         </div><!-- /row -->
         <div class="row">
-          <div class="col-sm-12 col-md-4">
-            <h2 class="row-head pb-1">Booking Made Easy</h2>
+          <div class="col-sm-12 col-md-12">
+            <div class="appointment-head-area">
+              <h2 class="appointments-head">Appointments made easy</h2>
+            </div>
             <p>We want to make it easy for you to get your dream nails and pedicure at our nail salon. We do this by making it easy for you to book with us, we do all our booking on-line and give our guests the option of changing their appointment without having to call to do so.</p>
             <p>Even if you want to get your nails done on the same day you can check to see if we have availability and not take the time to drive out to our East El Paso nail salon only to find out we are fully booked. Our online booking system shows all open availabilities at a glance and you can book same-day service with ease. We made it possible for you to book an appointment to get the nails of your dreams as easy as possible.</p>
             <p class"fixed-bottom"><a class="btn btn-secondary" href="{{ url_for('appointments') }}" role="button">How to Book an Appointment&raquo;</a></p>

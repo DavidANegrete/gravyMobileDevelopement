@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Facebook OG Tag -->
+    <meta property="og:title" content="Garcia Water Care | Water Filration Solutions El Paso" />
+    <meta property="og:type" content="website">
+    <meta property="og:url"content="http://www.garciawatercare.com/" />
+    <meta property="og:image" content="http://www.garciawatercare.com/static/garcia-water-care-logo.com" />
+    <meta property="og:description" content="{{ desc }}" />
+    
+    <!-- Website Tag -->
+    <title>{{ title }}</title>
+    <meta name="author" content="Gravy Mobile Developement ">
+    <meta name="description" content="{{ desc }}">
+    
+    <meta name="Robots" content="INDEX, FOLLOW">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">    
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One|Do+Hyeon|Italianno|Unica+One" rel="stylesheet">
+    <!--EO nav -->
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+    <!-- Google Fonts GWC-->
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href='{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css') }}'>
+
+    <!-- Custom CSS -->
+    <link rel='stylesheet' type='text/css' href='{{ url_for('static', filename='css/styles.css') }}?v=1'>
+    <link rel="stylesheet" href='{{ url_for('static', filename='css/magnific.css') }}'>
+    
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-toggleable-md navbar-light fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" id="CollapsingNavbar" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" id="brand" href="/" ><span class="brand-name">Garcia </span> | <span class="small nav-brand-text"> WATER CARE</span></a>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault" >
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item text-center">
+        <a class="nav-link nav-page" href="#about">About</a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link nav-page" href="#products">Line Up</a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link nav-page" href="#water-test">Water Tests</a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link nav-page" href="#contact-us">Contact Us</a>
+      </li>
+      <!--- Eo-->
+    </ul> <!-- EO collapse navbar-collapse-->
+  </div> <!-- EO navbar-collapse-->
+</nav>
+
+{% block body %}
+{% endblock %}
+
+<!--  Footer-->
+    <div class="footer bg-inverse text-white container-fluid" id="contact">
+      <div class="footer-name row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" >
+          <p class="footer-c p-2">Garcia Water Care, LLC &copy; 2018 | designed by <a href="http://gravymobiledevelopment.com">Gravy Mobile Development</a></p>
+        </div>
+      </div>
+    </div><!-- EO contact-info-->
+
+
+
+    <!-- Scripts-->
+{% block scripts %}
+{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+      $(document).ready(function () {
+        $(".navbar-nav li .nav-page").click(function(event) {
+
+
+          $(".navbar-collapse").collapse('hide');
+        });
+      });
+</script>
+  </body>
+</html>

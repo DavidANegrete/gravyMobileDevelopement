@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <!-- Facebook OG Tag -->
     <meta property="og:title" content="Gravy Mobile Application Developement" />
     <meta property="og:type" content="website">
     <meta property="og:url"content="http://www.GravyMobileApplicationDevelopement.com/" />
     <meta property="og:image" content="http://GravyMobileApplicationDevelopement.com/img/southwestpurewater_logo.jpg" />
     <meta property="og:description" content="{{ desc }}" />
+    
     <!-- Website Tag -->
     <title>{{ title }}</title>
     <meta name="author" content="David Negrete - Gravy Mobile Application Developement ">
@@ -19,49 +21,61 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">    
 
     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+    <!-- Font Awesom -->
     <link rel="stylesheet" href='{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css') }}'>
+
+    <!-- Custom CSS -->
     <link rel='stylesheet' type='text/css' href='{{ url_for('static', filename='css/styles.css') }}'>
     <link rel="stylesheet" href='{{ url_for('static', filename='css/magnific.css') }}'>
+    
+
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  </head>
-  <body>
-<!-- /.navbar -->
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse text-white">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+</head>
+<body>
+  <nav class="navbar navbar-toggleable-md navbar-light fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" id="CollapsingNavbar" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-   <a class="navbar-brand" id="brand"href="/" ><span class="brand-name">D'Licous Nails</span> | <span class="small nav-studio-text"> Nail Art Studio</span></a>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item text-center">
-            <a class="nav-link nav-page text-white" href="{{ url_for('about') }}">About</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link nav-page text-white" href="{{ url_for('services') }}">Menu</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link nav-page text-white" href="{{ url_for('classes') }}">Classes</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link nav-page text-white" href="{{ url_for('blog') }}">Nail Blog</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link nav-page text-white" href="{{ url_for('portfolio') }}">Portfolio</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link nav-page text-white" href="{{ url_for('appointments') }}">Appointments</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link nav-page text-white" href="{{ url_for('contact') }}">Contact Us</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link nav-page text-white" href="#">Book Now!</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    </button>
+    <a class="navbar-brand" id="brand"href="/" ><span class="brand-name">D'Licous Nails</span> | <span class="small nav-studio-text"> Nail Art Studio</span></a>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault" >
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item text-center">
+          <a class="nav-link nav-page text-white" href="{{ url_for('about') }}">About</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link nav-page text-white" href="{{ url_for('services') }}">Menu</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link nav-page text-white" href="{{ url_for('classes') }}">Classes</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link nav-page text-white" href="{{ url_for('blog') }}">Nail Blog</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link nav-page text-white" href="{{ url_for('portfolio') }}">Portfolio</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link nav-page text-white" href="{{ url_for('appointments') }}">Appointments</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link nav-page text-white" href="{{ url_for('contact') }}">Contact Us</a>
+        </li>
+        <!--- Eo-->
+        <li class="nav-item dropdown nav-dropdown text-center">
+          <a class="nav-link dropdown-toggle nav-dropdown-text" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>Book Now</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" data-toggle="modal" data-target="#darmaModal" href="#">Darma (Advanced Artist)</a>
+            <!--<a class="dropdown-item" data-toggle="modal" data-target="#alexModal"href="#">Alex (Pedicurist)</a>-->
+          </div><!-- EO dropdown-menu-->
+        </li> <!-- EO dropdown-->
+      </ul> <!-- EO collapse navbar-collapse-->
+    </div> <!-- EO navbar-collapse-->
+  </nav>
+
 {% block body %}
 {% endblock %}
 
